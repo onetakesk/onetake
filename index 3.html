@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>ONETAKE — Video & fotografia</title>
+<meta name="description" content="ONETAKE — video produkcia, fotografia a social media content pre značky, podniky a projekty. Jeden záber. Jasný zámer.">
+<meta property="og:title" content="ONETAKE — Video & fotografia">
+<meta property="og:description" content="Vizuálny obsah s atmosférou. Video, fotografia a social media.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://onetake.sk/">
+<meta property="og:image" content="https://onetake.sk/assets/onetake-mark.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://onetake.sk/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Cpath d='M6 25 16 6l10 19' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"ONETAKE","url":"https://onetake.sk/","email":"onetake.sk@gmail.com","description":"Video produkcia, fotografia a social media content pre značky, podniky a projekty.","areaServed":"SK"}</script>
+<style>
+:root{--bg:#000;--fg:#fff;--mut:#8f8f8f;--hair:rgba(255,255,255,.18);--hair2:rgba(255,255,255,.38);--pad:clamp(20px,4.4vw,72px);--ease:cubic-bezier(.2,.7,.2,1);--f:'Jost','Futura','Century Gothic',system-ui,sans-serif;--nav:76px}
+.light{--bg:#fff;--fg:#000;--mut:#666;--hair:rgba(0,0,0,.16);--hair2:rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+html{background:#000;scroll-behavior:smooth;scroll-padding-top:var(--nav)}
+body{margin:0;background:#000;color:#fff;font:400 18px/1.62 var(--f);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+::selection{background:#fff;color:#000}.light ::selection{background:#000;color:#fff}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.skip{position:fixed;left:12px;top:-60px;z-index:100;background:#fff;color:#000;padding:10px 16px;border-radius:99px;transition:top .2s}.skip:focus{top:12px}
+.wrap{width:min(100%,1680px);margin-inline:auto;padding-inline:var(--pad)}
+.wm{display:block;overflow:visible}
+.ln{background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;padding-bottom:3px;transition:background-size .45s var(--ease),background-position 0s .45s}
+.ln:hover{background-size:0 1px;background-position:100% 100%;transition:background-size .45s var(--ease)}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:54px;padding:0 30px;border-radius:99px;border:1px solid currentColor;font-weight:500;font-size:16px;letter-spacing:.01em;cursor:pointer;background:transparent;transition:background .35s,color .35s,border-color .35s}
+.btn.fill{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn.fill:hover{background:transparent;color:var(--fg)}.btn:not(.fill):hover{background:var(--fg);color:var(--bg)}
+.btn.sm{height:42px;padding:0 20px;font-size:15px}
+
+/* nav + timecode: blend so they read on black and on white */
+.nav,.tc{position:fixed;z-index:50;color:#fff;mix-blend-mode:difference}
+.nav{top:0;left:0;right:0;height:var(--nav)}
+.nav-in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:block;width:clamp(120px,11vw,156px)}.brand .wm{width:100%;height:auto}
+.menu{display:flex;align-items:center;gap:clamp(18px,2.6vw,38px);font-size:16px}
+.burger{display:none;width:44px;height:44px;border:0;background:none;position:relative;cursor:pointer;margin-right:-10px}
+.burger:before,.burger:after{content:"";position:absolute;left:10px;right:10px;height:1.5px;background:currentColor;transition:transform .35s var(--ease),top .35s var(--ease)}
+.burger:before{top:17px}.burger:after{top:26px}
+.burger[aria-expanded=true]:before{top:21.5px;transform:rotate(45deg)}.burger[aria-expanded=true]:after{top:21.5px;transform:rotate(-45deg)}
+.tc{left:var(--pad);bottom:22px;font-size:13px;letter-spacing:.09em;display:flex;gap:16px;align-items:baseline;pointer-events:none}
+.tc b{display:inline-block;width:.64em;text-align:center;font-weight:400}.tc i{font-style:normal;opacity:.6}
+.sheet{position:fixed;inset:0;z-index:45;background:#000;color:#fff;display:none;flex-direction:column;justify-content:center;gap:6px;padding:var(--nav) var(--pad) 40px}
+.sheet a{font-size:clamp(40px,12vw,64px);font-weight:300;letter-spacing:-.03em;line-height:1.25}
+.sheet.open{display:flex}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:calc(var(--nav) + 30px) 0 90px;overflow:hidden}
+.hero:before{content:"";position:absolute;left:50%;top:38%;width:90vw;height:60vw;max-height:900px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(255,255,255,.07),transparent);pointer-events:none}
+.wm-wrap{position:relative}
+.wm-hero{width:100%;height:auto;color:#fff}
+.dr{stroke-dasharray:1;stroke-dashoffset:1;animation:draw .95s var(--ease) var(--d) both}
+@keyframes draw{to{stroke-dashoffset:0}}
+.streak{position:absolute;left:0;top:50%;width:26%;height:2px;margin-top:-1px;background:linear-gradient(90deg,transparent,#fff 50%,transparent);box-shadow:0 0 36px 6px rgba(255,255,255,.28);opacity:0;animation:streak 2.6s cubic-bezier(.55,0,.25,1) 2.3s both;pointer-events:none}
+@keyframes streak{0%{opacity:0;transform:translateX(-110%)}12%{opacity:1}88%{opacity:1}100%{opacity:0;transform:translateX(390%)}}
+.hero-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,96px);align-items:end;margin-top:clamp(40px,6.5vw,104px);animation:rise 1.1s var(--ease) 2.1s both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+h1{font-weight:300;font-size:clamp(28px,3.3vw,52px);line-height:1.1;letter-spacing:-.025em;margin:0}
+.hero-copy p{margin:0 0 28px;color:var(--mut);max-width:36ch}
+.acts{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+
+/* sections */
+.sec{padding-block:clamp(90px,12vw,190px)}
+.sh{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,64px);align-items:end;margin-bottom:clamp(44px,6.5vw,100px)}
+h2{font-weight:300;font-size:clamp(44px,7.4vw,126px);line-height:1.03;letter-spacing:-.04em;margin:0}
+.intro{margin:0 0 .5em;color:var(--mut);max-width:38ch}
+
+/* work */
+.work{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(32px,3.4vw,56px) clamp(14px,1.6vw,24px)}
+figure{margin:0;display:flex;flex-direction:column}
+.fm{position:relative;overflow:hidden;background:#0a0a0a;flex:none}
+.fm:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 100% at 50% 50%,transparent 55%,rgba(0,0,0,.55))}
+.shot{position:absolute;inset:0;background:var(--img,none) center/cover;transition:transform 1.8s var(--ease)}
+@media(hover:hover){figure:hover .shot{transform:scale(1.035)}}
+.f1{grid-column:1/-1}.f1 .fm{aspect-ratio:2.39/1}
+.f2{grid-column:span 7}.f2 .fm{aspect-ratio:3/2}
+.f3{grid-column:span 5}.f3 .fm{flex:1;min-height:320px}
+figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding-top:16px}
+figcaption h3{margin:0;font-weight:400;font-size:clamp(20px,1.9vw,26px);letter-spacing:-.015em}
+figcaption span{color:var(--mut);font-size:16px;white-space:nowrap}
+.note{margin:clamp(36px,4vw,60px) 0 0;color:var(--mut);font-size:15px;max-width:60ch}
+/* generated stills (replace via --img) */
+.s1{background:linear-gradient(180deg,#04070b 0%,#08131c 52%,#0d0a08 100%)}
+.s1 .bk{position:absolute;inset:0;filter:blur(1.6px);mix-blend-mode:screen;background:radial-gradient(circle 2.4vw at 9% 60%,rgba(255,150,70,0.85) 0,rgba(255,150,70,0.59) 62%,transparent 66%),radial-gradient(circle 1.5vw at 17% 71%,rgba(255,196,120,0.7) 0,rgba(255,196,120,0.49) 62%,transparent 66%),radial-gradient(circle 2.1vw at 27% 52%,rgba(70,200,205,0.7) 0,rgba(70,200,205,0.49) 62%,transparent 66%),radial-gradient(circle 3.0vw at 39% 67%,rgba(255,176,96,0.8) 0,rgba(255,176,96,0.56) 62%,transparent 66%),radial-gradient(circle 1.7vw at 51% 57%,rgba(90,150,255,0.7) 0,rgba(90,150,255,0.49) 62%,transparent 66%),radial-gradient(circle 2.5vw at 60% 70%,rgba(255,150,70,0.75) 0,rgba(255,150,70,0.52) 62%,transparent 66%),radial-gradient(circle 2.9vw at 71% 53%,rgba(70,200,205,0.65) 0,rgba(70,200,205,0.45) 62%,transparent 66%),radial-gradient(circle 1.8vw at 82% 66%,rgba(255,196,120,0.8) 0,rgba(255,196,120,0.56) 62%,transparent 66%),radial-gradient(circle 2.3vw at 91% 56%,rgba(255,150,70,0.7) 0,rgba(255,150,70,0.49) 62%,transparent 66%),radial-gradient(circle 1.2vw at 46% 44%,rgba(255,230,190,0.6) 0,rgba(255,230,190,0.42) 62%,transparent 66%),radial-gradient(circle 1.0vw at 76% 40%,rgba(120,200,255,0.5) 0,rgba(120,200,255,0.35) 62%,transparent 66%),radial-gradient(circle 1.1vw at 14% 38%,rgba(255,200,140,0.5) 0,rgba(255,200,140,0.35) 62%,transparent 66%)}
+.s1 .fl{position:absolute;left:-10%;right:-10%;top:58%;height:2px;background:linear-gradient(90deg,transparent,rgba(150,210,255,.95) 50%,transparent);box-shadow:0 0 30px 5px rgba(90,160,255,.4),0 0 100px 24px rgba(60,120,255,.2)}
+.s2{background:linear-gradient(100deg,#090807,#14100c 52%,#090807)}
+.s2 .gl{position:absolute;right:-6%;top:-30%;width:60%;aspect-ratio:1;background:radial-gradient(closest-side,rgba(255,205,140,.35),transparent)}
+.s2 .sf{position:absolute;top:-12%;bottom:-12%;width:11%;transform:skewX(-17deg);background:linear-gradient(180deg,rgba(255,216,160,.5),rgba(255,216,160,.1) 75%,transparent);filter:blur(7px)}
+.s2 .a{left:38%}.s2 .b{left:52%}
+.s2 .fr{position:absolute;left:0;right:0;bottom:0;height:24%;background:linear-gradient(180deg,#1b150e,#040302)}
+.s3{background:radial-gradient(70% 55% at 50% 100%,rgba(255,110,140,.3),transparent),#0a090e}
+.s3 .ph{position:absolute;top:50%;left:50%;height:80%;aspect-ratio:9/16;transform:translate(-50%,-50%);border-radius:22px;overflow:hidden;background:linear-gradient(200deg,#2b2152,#b24b6e 55%,#f3a273 82%,#120d12);box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.s3 .ph:before{content:"";position:absolute;left:50%;top:60%;width:46%;aspect-ratio:1;margin:-23%;border-radius:50%;background:radial-gradient(circle,#fff3dd 0 25%,#ffc99b 48%,transparent 70%)}
+.s3 .bars{position:absolute;top:12px;left:12px;right:12px;display:flex;gap:4px}.s3 .bars i{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.3)}.s3 .bars i:first-child{background:#fff}
+
+/* services */
+.sv{border-top:1px solid var(--hair)}
+.srow{display:grid;grid-template-columns:7fr 5fr;gap:clamp(20px,4vw,64px);align-items:start;padding:clamp(30px,3.6vw,56px) 0;border-bottom:1px solid var(--hair);transition:opacity .45s}
+.srow h3{margin:0;font-weight:300;font-size:clamp(36px,5.4vw,88px);line-height:1.04;letter-spacing:-.035em}
+.srow p{margin:.5em 0 14px;color:var(--mut);max-width:38ch}.srow .t{font-size:16px}
+@media(hover:hover){.sv:hover .srow{opacity:.35}.sv .srow:hover{opacity:1}}
+
+/* exposure: the one big move — black rises to white, text inverts */
+.expo{height:230vh;background:linear-gradient(180deg,#000 0,#000 47%,#fff 53%,#fff 100%)}
+.expo-in{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:center;color:#fff;mix-blend-mode:difference}
+.expo-in .wrap{width:100%}
+.expo h2{font-size:clamp(46px,10.4vw,176px);line-height:1.02;letter-spacing:-.045em}
+.expo p{margin:clamp(24px,3.2vw,48px) 0 0;max-width:46ch;color:#999;font-size:19px}
+
+/* process: an edit timeline */
+.proc{position:relative}
+.ruler{position:relative;height:38px;background:repeating-linear-gradient(90deg,var(--hair2) 0 1px,transparent 1px 12px) 0 100%/100% 9px no-repeat,linear-gradient(90deg,var(--fg) 0 1px,transparent 1px) 0 0/25% 100%;border-bottom:1px solid var(--fg)}
+.playhead{position:absolute;left:calc(var(--p,0) * 100%);top:-8px;bottom:-1px;width:1px;background:var(--fg)}
+.playhead:before{content:"";position:absolute;left:-6px;top:-4px;width:12px;height:12px;border-left:1.5px solid var(--fg);border-top:1.5px solid var(--fg);transform:translate(0,3px) rotate(45deg) scale(.9)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,40px);margin-top:36px}
+.step{transition:opacity .6s}.t .step{opacity:.3}.t .step.on{opacity:1}
+.step span{color:var(--mut);font-size:16px}
+.step h3{margin:10px 0 12px;font-weight:400;font-size:clamp(24px,2.3vw,32px);letter-spacing:-.02em;line-height:1.15}
+.step p{margin:0;color:var(--mut);font-size:17px}
+
+/* contact */
+.contact{padding-block:clamp(90px,12vw,190px) clamp(60px,7vw,110px)}
+.cg{display:grid;grid-template-columns:5fr 6fr;gap:clamp(36px,7vw,120px);align-items:start}
+.contact h2{font-size:clamp(46px,6.8vw,112px)}
+.cc{margin:28px 0 22px;color:var(--mut);max-width:34ch}
+.copy{background:none;border:0;padding:0;cursor:pointer;font-size:16px}
+form{display:grid;gap:30px;padding-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;border:0;padding:0;margin:0}.chips legend{padding:0;margin-bottom:14px;color:var(--mut);font-size:16px}
+.chips input{position:absolute;opacity:0}.chips span{display:inline-block;padding:11px 20px;border:1px solid var(--hair2);border-radius:99px;font-size:16px;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.chips span:hover{border-color:var(--fg)}.chips input:checked+span{background:var(--fg);color:var(--bg);border-color:var(--fg)}.chips input:focus-visible+span{outline:2px solid var(--fg);outline-offset:3px}
+label.f{display:grid;gap:6px;color:var(--mut);font-size:16px}
+label.f input,label.f textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--hair2);border-radius:0;padding:10px 0 12px;font-size:20px;color:var(--fg);resize:vertical;transition:border-color .25s,box-shadow .25s}
+label.f input:focus,label.f textarea:focus{outline:0;border-color:var(--fg);box-shadow:0 1px 0 var(--fg)}
+label.f ::placeholder{color:var(--mut);opacity:.7}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.form-end{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.fn{margin:0;color:var(--mut);font-size:15px;flex:1;min-width:200px}
+
+/* footer */
+footer{padding:clamp(40px,5vw,80px) 0 28px}
+.wm-foot{width:100%;height:auto;color:#000}
+.fi{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:clamp(36px,5vw,72px);padding-top:22px;border-top:1px solid var(--hair);font-size:16px;color:var(--mut)}
+.fl{display:flex;gap:26px;color:var(--fg)}
+
+/* responsive */
+@media(max-width:900px){
+ .hero-row,.sh,.srow,.cg{grid-template-columns:1fr}
+ .hero-row{align-items:start}
+ .work{grid-template-columns:1fr}.f1,.f2,.f3{grid-column:auto}.f1 .fm{aspect-ratio:16/9}.f3 .fm{flex:none;aspect-ratio:4/5;min-height:0}
+ .steps{grid-template-columns:1fr 1fr;gap:34px 24px}
+}
+@media(max-width:700px){
+ .menu{display:none}.burger{display:block}
+ .ruler{display:none}.steps{grid-template-columns:1fr;margin-top:0}.t .step,.step{opacity:1;border-top:1px solid var(--hair);padding:22px 0 26px}
+ .row2{grid-template-columns:1fr}.tc{display:none}
+ body{font-size:17px}
+ .expo{height:210vh}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .dr{animation:none;stroke-dashoffset:0}.streak{display:none}.hero-row{animation:none}
+ *{transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Preskočiť na obsah</a>
+<header class="nav"><div class="wrap nav-in">
+<a class="brand" href="#top" aria-label="ONETAKE – domov"><svg class="wm wm-nav" viewBox="0 0 980 100" fill="none" stroke="currentColor" stroke-width="15" stroke-linejoin="miter" stroke-linecap="butt" aria-hidden="true" focusable="false"><defs><clipPath id="nc1"><rect width="82" height="100"/></clipPath><clipPath id="nc2"><rect width="66" height="100"/></clipPath><clipPath id="nc3"><rect width="80" height="100"/></clipPath><clipPath id="nc4"><rect width="100" height="100"/></clipPath><clipPath id="nc5"><rect width="82" height="100"/></clipPath><clipPath id="nc6"><rect width="66" height="100"/></clipPath></defs><g transform="translate(0 0)"><path d="M7.5 50A42.5 42.5 0 1 1 92.5 50A42.5 42.5 0 1 1 7.5 50"/></g><g transform="translate(172 0)" clip-path="url(#nc1)"><path d="M7.5 100V0"/><path d="M-1.9 -14L83.9 114"/><path d="M74.5 100V0"/></g><g transform="translate(344 0)" clip-path="url(#nc2)"><path d="M7.5 0V100"/><path d="M0 7.5H66"/><path d="M0 92.5H66"/><path d="M0 50H55.4"/></g><g transform="translate(490 0)" clip-path="url(#nc3)"><path d="M0 7.5H80"/><path d="M40 0V100"/></g><g transform="translate(604 0)" clip-path="url(#nc4)"><path d="M0.1 116.5L50 16.8L99.9 116.5"/></g><g transform="translate(760 0)" clip-path="url(#nc5)"><path d="M7.5 0V100"/><path d="M7.5 64L92.4 -12.8"/><path d="M35.8 38.4L84.2 108.6"/></g><g transform="translate(914 0)" clip-path="url(#nc6)"><path d="M7.5 0V100"/><path d="M0 7.5H66"/><path d="M0 92.5H66"/><path d="M0 50H55.4"/></g></svg></a>
+<nav class="menu" aria-label="Hlavná navigácia"><a class="ln" href="#work">Projekty</a><a class="ln" href="#services">Služby</a><a class="ln" href="#about">Prístup</a><a class="btn sm" href="#contact">Začať projekt</a></nav>
+<button class="burger" id="burger" type="button" aria-label="Otvoriť menu" aria-expanded="false" aria-controls="sheet"></button>
+</div></header>
+<nav class="sheet" id="sheet" aria-label="Mobilná navigácia"><a href="#work">Projekty</a><a href="#services">Služby</a><a href="#about">Prístup</a><a href="#process">Postup</a><a href="#contact">Kontakt</a></nav>
+<div class="tc" aria-hidden="true"><span>Záber 1</span><span id="tc"></span></div>
+
+<main id="main">
+<section class="hero" id="top"><div class="wrap">
+<div class="wm-wrap"><svg class="wm wm-hero" viewBox="0 0 980 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="miter" stroke-linecap="butt" role="img" aria-label="ONETAKE"><defs><clipPath id="hc1"><rect width="82" height="100"/></clipPath><clipPath id="hc2"><rect width="66" height="100"/></clipPath><clipPath id="hc3"><rect width="80" height="100"/></clipPath><clipPath id="hc4"><rect width="100" height="100"/></clipPath><clipPath id="hc5"><rect width="82" height="100"/></clipPath><clipPath id="hc6"><rect width="66" height="100"/></clipPath></defs><g transform="translate(0 0)"><path class="dr" pathLength="1" style="--d:0.30s" d="M3 50A47 47 0 1 1 97 50A47 47 0 1 1 3 50"/></g><g transform="translate(172 0)" clip-path="url(#hc1)"><path class="dr" pathLength="1" style="--d:0.50s" d="M3 100V0"/><path class="dr" pathLength="1" style="--d:0.60s" d="M-7.6 -14L89.6 114"/><path class="dr" pathLength="1" style="--d:0.70s" d="M79 100V0"/></g><g transform="translate(344 0)" clip-path="url(#hc2)"><path class="dr" pathLength="1" style="--d:0.70s" d="M3 0V100"/><path class="dr" pathLength="1" style="--d:0.80s" d="M0 3H66"/><path class="dr" pathLength="1" style="--d:0.90s" d="M0 97H66"/><path class="dr" pathLength="1" style="--d:1.00s" d="M0 50H55.4"/></g><g transform="translate(490 0)" clip-path="url(#hc3)"><path class="dr" pathLength="1" style="--d:0.90s" d="M0 3H80"/><path class="dr" pathLength="1" style="--d:1.00s" d="M40 0V100"/></g><g transform="translate(604 0)" clip-path="url(#hc4)"><path class="dr" pathLength="1" style="--d:1.10s" d="M0.1 106.6L50 6.7L99.9 106.6"/></g><g transform="translate(760 0)" clip-path="url(#hc5)"><path class="dr" pathLength="1" style="--d:1.30s" d="M3 0V100"/><path class="dr" pathLength="1" style="--d:1.40s" d="M3 64L96 -12.8"/><path class="dr" pathLength="1" style="--d:1.50s" d="M34 38.4L87 108.6"/></g><g transform="translate(914 0)" clip-path="url(#hc6)"><path class="dr" pathLength="1" style="--d:1.50s" d="M3 0V100"/><path class="dr" pathLength="1" style="--d:1.60s" d="M0 3H66"/><path class="dr" pathLength="1" style="--d:1.70s" d="M0 97H66"/><path class="dr" pathLength="1" style="--d:1.80s" d="M0 50H55.4"/></g></svg><span class="streak" aria-hidden="true"></span></div>
+<div class="hero-row">
+<h1>Video &amp; fotografia.<br>Jeden záber.</h1>
+<div class="hero-copy"><p>Vizuálny obsah, ktorý zachytí atmosféru, zvýrazní značku a zostane v pamäti. Bez zbytočného hluku. S jasným zámerom.</p>
+<div class="acts"><a class="btn fill" href="#contact">Poďme tvoriť</a><a class="ln" href="mailto:onetake.sk@gmail.com">onetake.sk@gmail.com</a></div></div>
+</div>
+</div></section>
+
+<section class="sec" id="work"><div class="wrap">
+<div class="sh"><h2>Obraz, ktorý<br>má dôvod.</h2><p class="intro">Každý projekt začína myšlienkou. Potom prichádza svetlo, kompozícia, pohyb a strih, všetko s jedným cieľom: vytvoriť vizuál, ktorý cítiť.</p></div>
+<div class="work">
+<figure class="f1"><div class="fm"><div class="shot s1"><i class="bk"></i><i class="fl"></i></div></div><figcaption><h3>Príbeh značky</h3><span>Film, 16:9</span></figcaption></figure>
+<figure class="f2"><div class="fm"><div class="shot s2"><i class="gl"></i><i class="sf a"></i><i class="sf b"></i><i class="fr"></i></div></div><figcaption><h3>Priestor a atmosféra</h3><span>Fotografia, 3:2</span></figcaption></figure>
+<figure class="f3"><div class="fm"><div class="shot s3"><div class="ph"><span class="bars"><i></i><i></i><i></i></span></div></div></div><figcaption><h3>Momenty v pohybe</h3><span>Reels, 9:16</span></figcaption></figure>
+</div>
+<p class="note">Zatiaľ ide o vizuálne štúdie, nie o hotové realizácie. Vlastné zábery pridáš jedným riadkom, pozri README.</p>
+</div></section>
+
+<section class="sec" id="services"><div class="wrap">
+<div class="sh"><h2>Jasný zámer.<br>Silný obraz.</h2><p class="intro">Od prvého nápadu po finálny export. Rozsah prispôsobíme projektu, platforme aj tomu, čo má obsah dosiahnuť.</p></div>
+<div class="sv">
+<article class="srow"><h3>Video produkcia</h3><div><p>Atmosférické videá, promo spoty a vizuálne príbehy, ktoré dávajú značke vlastný rytmus.</p><span class="t">Promo, brand film, strih</span></div></article>
+<article class="srow"><h3>Fotografia</h3><div><p>Ľudia, produkty, priestory a detaily zachytené s dôrazom na svetlo, kompozíciu a náladu.</p><span class="t">Produkt, priestor, portrét</span></div></article>
+<article class="srow"><h3>Social content</h3><div><p>Reels a krátke videá navrhnuté pre vertikálny formát a prirodzené fungovanie na sociálnych sieťach.</p><span class="t">Reels, stories, 9:16</span></div></article>
+<article class="srow"><h3>Obsah pre podniky</h3><div><p>Vizuály pre kaviarne, reštaurácie, lokálne značky a miesta, ktoré majú čo ukázať.</p><span class="t">Gastro, eventy, lokálne značky</span></div></article>
+</div></div></section>
+
+<section class="expo" id="about" aria-labelledby="expo-h"><div class="expo-in"><div class="wrap">
+<h2 id="expo-h">Menej efektov.<br>Viac pocitu.<br>Každý detail<br>má význam.</h2>
+<p>ONETAKE spája cit pre obraz s premyslenou realizáciou. Veríme v čistú kompozíciu, prirodzenú atmosféru a obsah, ktorý nepotrebuje kričať, aby si ho niekto všimol.</p>
+</div></div></section>
+
+<section class="sec light" id="process" style="background:#fff;color:#000"><div class="wrap">
+<div class="sh"><h2>Od nápadu<br>po finálny obraz.</h2><p class="intro">Jednoduchý proces. Otvorená komunikácia. Jasný výsledok.</p></div>
+<div class="proc" id="proc"><div class="ruler" aria-hidden="true"><i class="playhead"></i></div>
+<div class="steps">
+<article class="step"><span>Brief</span><h3>Najprv počúvame</h3><p>Ujasníme si cieľ, publikum, rozsah a predstavu o výsledku.</p></article>
+<article class="step"><span>Koncept</span><h3>Hľadáme smer</h3><p>Pripravíme vizuálny prístup a plán, ktorý dáva zmysel projektu.</p></article>
+<article class="step"><span>Produkcia</span><h3>Zachytíme moment</h3><p>Natáčame a fotíme s dôrazom na detail, svetlo a atmosféru.</p></article>
+<article class="step"><span>Postprodukcia</span><h3>Doladíme obraz</h3><p>Strih, farby a výstupy pripravíme pre dohodnuté použitie.</p></article>
+</div></div>
+</div></section>
+
+<section class="contact light" id="contact" style="background:#fff;color:#000"><div class="wrap cg">
+<div><h2>Máš nápad?<br>Poďme ho zachytiť.</h2><p class="cc">Povedz nám, čo plánuješ. Ozveme sa a spoločne nájdeme najlepší spôsob, ako tvoju predstavu pretaviť do obrazu.</p><button class="copy ln" id="copy" type="button">onetake.sk@gmail.com — kopírovať</button></div>
+<form id="form" novalidate>
+<fieldset class="chips"><legend>Čo potrebuješ?</legend>
+<label><input type="radio" name="t" value="Video" checked><span>Video</span></label><label><input type="radio" name="t" value="Fotografia"><span>Fotografia</span></label><label><input type="radio" name="t" value="Social content"><span>Social content</span></label><label><input type="radio" name="t" value="Iné"><span>Niečo iné</span></label></fieldset>
+<div class="row2"><label class="f">Meno alebo značka<input id="nm" autocomplete="name" required></label><label class="f">Tvoj e-mail<input id="em" type="email" autocomplete="email"></label></div>
+<label class="f">Čo plánuješ?<textarea id="ms" rows="4" placeholder="Krátko: čo, kedy a kde."></textarea></label>
+<div class="form-end"><button class="btn fill" type="submit">Pripraviť e-mail</button><p class="fn" id="fn" role="status">Otvorí sa tvoj e-mailový program s vyplnenou správou.</p></div>
+</form></div></section>
+</main>
+
+<footer class="light" style="background:#fff;color:#000"><div class="wrap">
+<svg class="wm wm-foot" viewBox="0 0 847.1 100" fill="none" stroke="currentColor" stroke-width="14" stroke-linejoin="miter" stroke-linecap="butt" aria-hidden="true" focusable="false"><defs><clipPath id="fc1"><rect width="91.8" height="100"/></clipPath><clipPath id="fc2"><rect width="73.9" height="100"/></clipPath><clipPath id="fc3"><rect width="89.6" height="100"/></clipPath><clipPath id="fc4"><rect width="112" height="100"/></clipPath><clipPath id="fc5"><rect width="91.8" height="100"/></clipPath><clipPath id="fc6"><rect width="73.9" height="100"/></clipPath></defs><g transform="translate(0 0)"><path d="M7 50A49 43 0 1 1 105 50A49 43 0 1 1 7 50"/></g><g transform="translate(148 0)" clip-path="url(#fc1)"><path d="M7 100V0"/><path d="M-3.9 -14L95.7 114"/><path d="M84.8 100V0"/></g><g transform="translate(284.8 0)" clip-path="url(#fc2)"><path d="M7 0V100"/><path d="M0 7H73.9"/><path d="M0 93H73.9"/><path d="M0 50H62.1"/></g><g transform="translate(398.8 0)" clip-path="url(#fc3)"><path d="M0 7H89.6"/><path d="M44.8 0V100"/></g><g transform="translate(505.4 0)" clip-path="url(#fc4)"><path d="M-0.6 115.4L56 14.3L112.6 115.4"/></g><g transform="translate(645.4 0)" clip-path="url(#fc5)"><path d="M7 0V100"/><path d="M7 64L104.6 -12.8"/><path d="M39.5 38.4L95.2 108.6"/></g><g transform="translate(773.2 0)" clip-path="url(#fc6)"><path d="M7 0V100"/><path d="M0 7H73.9"/><path d="M0 93H73.9"/><path d="M0 50H62.1"/></g></svg>
+<div class="fi"><span>Jeden záber. Jeden príbeh. © <span id="yr"></span></span><div class="fl"><a class="ln" href="#work">Projekty</a><a class="ln" href="#services">Služby</a><a class="ln" href="#contact">Kontakt</a></div></div>
+</div></footer>
+
+<script>
+(()=>{const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],rm=matchMedia('(prefers-reduced-motion:reduce)').matches,cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+/* menu */
+const bg=$('#burger'),sh=$('#sheet');
+const setMenu=o=>{sh.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Zavrieť menu':'Otvoriť menu');document.documentElement.style.overflow=o?'hidden':''};
+bg.onclick=()=>setMenu(!sh.classList.contains('open'));sh.onclick=e=>e.target.closest('a')&&setMenu(false);
+addEventListener('keydown',e=>e.key==='Escape'&&setMenu(false));
+matchMedia('(min-width:701px)').addEventListener('change',e=>e.matches&&setMenu(false));
+$('#yr').textContent=new Date().getFullYear();
+/* timecode: one take, never resets */
+const tcEl=$('#tc');tcEl.innerHTML=[...'00:00:00:00'].map(c=>c===':'?'<i>:</i>':'<b>0</b>').join('');
+const ds=$$('#tc b'),p2=n=>String(n).padStart(2,'0');let last=-1;const t0=performance.now();
+const paint=fr=>{const s=p2(Math.floor(fr/86400))+p2(Math.floor(fr/1440)%60)+p2(Math.floor(fr/24)%60)+p2(fr%24);ds.forEach((d,i)=>d.textContent=s[i])};
+(function loop(now){const sec=Math.floor((now-t0)/1000),fr=rm?sec*24:Math.floor((now-t0)/1000*24);if(fr!==last){last=fr;paint(fr)}requestAnimationFrame(loop)})(t0);
+/* process playhead */
+const pr=$('#proc'),ph=$('.ruler'),steps=$$('.step');$('.steps').classList.add('t');
+const tick=()=>{const r=pr.getBoundingClientRect(),vh=innerHeight,p=cl((vh*.85-r.top)/(vh*.6));ph.style.setProperty('--p',p);steps.forEach((s,i)=>s.classList.toggle('on',p>=i/4+.02))};
+addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);tick();
+/* contact */
+const mail='onetake.sk@gmail.com',fn=$('#fn');
+$('#copy').onclick=async e=>{const b=e.currentTarget;try{await navigator.clipboard.writeText(mail);b.textContent='Skopírované'}catch{b.textContent=mail}setTimeout(()=>b.textContent=mail+' — kopírovať',2200)};
+$('#form').onsubmit=e=>{e.preventDefault();const t=document.querySelector('input[name=t]:checked').value,n=$('#nm').value.trim(),m=$('#em').value.trim(),s=$('#ms').value.trim();
+if(!n||(m&&!/^\S+@\S+\.\S+$/.test(m))){fn.textContent='Doplň prosím meno a platný e-mail (alebo nechaj e-mail prázdny).';return}
+const body=`Ahoj ONETAKE,\n\nTyp projektu: ${t}\n\n${s||'(podrobnosti doplním)'}\n\n— ${n}${m?'\n'+m:''}`;
+location.href=`mailto:${mail}?subject=${encodeURIComponent('Projekt: '+t+' — '+n)}&body=${encodeURIComponent(body)}`;fn.textContent='Otváram e-mailový program…'};
+})();
+</script>
+</body>
+</html>
